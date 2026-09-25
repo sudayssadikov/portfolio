@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "bosh-sahifa",
+    "works": "loyihalar",
+    "about": "men-haqimda",
+    "skills": "ko'nikmalar",
+    "contacts": "aloqa"
+  },
+  "hero": {
+    "title_start": "Sudays — ",
+    "web_designer": "Front-End",
+    "and": " va ",
+    "frontend_dev": "React dasturchi",
+    "subtitle": "O'zbekistonda tug'ilgan front-end dasturchi. Zamonaviy, tezkor va qulay veb-ilovalarni React yordamida yaratadi.",
+    "cta": "Bog'lanish !!"
+  },
+  "quote": {
+    "text": "Yaxshi kod o'z-o'zini tushuntiradi, ajoyib kod esa o'zini his qildiradi",
+    "author": "Front-End Falsafasi"
+  },
+  "projects": {
+    "title": "loyihalar",
+    "view_all": "Barchasini ko'rish ~~>",
+    "live_btn": "Jonli ko'rish <~>",
+    "github_btn": "GitHub <~>",
+    "items": {
+      "lab_verce": {
+        "title": "lab.verce",
+        "description": "React va TypeScript asosidagi ilg'or, tezkor va modulli arxitekturaga ega zamonaviy veb-platforma."
+      },
+      "logistmobile": {
+        "title": "logistmobile",
+        "description": "Logistika va yuk tashish jarayonlarini real vaqtda kuzatish hamda boshqarish uchun moslashuvchan mobil veb-ilova."
+      },
+      "retseptuz": {
+        "title": "retseptuz",
+        "description": "Milliy va jahon taomlari retseptlari, toifalar filtri va aqlli qidiruv tizimiga ega interaktiv oshpazlik portali."
+      },
+      "akademnashr": {
+        "title": "akademnashr",
+        "description": "Akademnashr nashriyoti uchun kitoblar katalogi, mualliflar taqdimoti va qulay o'qish interfeysiga ega rasmiy sayt."
+      },
+      "books": {
+        "title": "books",
+        "description": "Onlayn kitoblar kutubxonasi, kitob javonlari va o'quvchilar uchun qulay navigatsiyaga ega platforma."
+      }
+    }
+  },
+  "skills": {
+    "title": "ko'nikmalar",
+    "categories": {
+      "languages": "Dasturlash tillari",
+      "frameworks": "Front-end & React",
+      "styling": "Stillash & UI",
+      "tools": "Ish asboblari",
+      "other": "Boshqa ko'nikmalar"
+    }
+  },
+  "about": {
+    "title": "men-haqimda",
+    "greeting": "Salom, men Sudaysman!",
+    "p1": "Men O'zbekistonda tug'ilganman va faqat front-end yo'nalishida ishlayman. Asosiy e'tiborimni React ekotizimi orqali zamonaviy, tezkor va chiroyli veb-ilovalarni yaratishga qaratganman.",
+    "p2": "Har bir loyihada toza arxitektura, qulay UI/UX, mobil moslashuvchanlik va yuqori unumdorlikka qat'iy amal qilaman. JavaScript, TypeScript va React'da sifatli kod yozish mening asosiy ixtisosligimdir.",
+    "read_more": "Batafsil ma'lumot ->",
+    "read_less": "Qisqartirish <-",
+    "more_info": "Loyihalarimda komponentlarni qayta ishlatiluvchan qilish, zamonaviy state management (Zustand/Redux) va REST API bilan uzviy integratsiyani ta'minlayman. GitHub'da doimiy yangi tajribalar ustida ishlayman."
+  },
+  "contacts": {
+    "title": "aloqa",
+    "text": "Men yangi takliflar va loyihalar uchun ochiqman. Savollaringiz yoki takliflaringiz bo'lsa, bemalol Telegram yoki Instagram orqali bog'lanishingiz mumkin.",
+    "box_title": "Menga shu yerda yozing",
+    "telegram": "@sudays700",
+    "instagram": "@suudays7",
+    "github": "sudayssadikov",
+    "email": "sudayssadikov@gmail.com",
+    "form_name": "Ism",
+    "form_name_placeholder": "Ismingiz",
+    "form_email": "Elektron pochta",
+    "form_email_placeholder": "sizning@pochtangiz.uz",
+    "form_title": "Mavzu",
+    "form_title_placeholder": "Loyiha bo'yicha taklif...",
+    "form_message": "Xabar",
+    "form_message_placeholder": "Xabaringizni bu yerga yozing...",
+    "send_btn": "Xabarni yuborish ->",
+    "success_msg": "Xabar muvaffaqiyatli yuborildi! Tez orada javob beraman.",
+    "copied": "Nusxa olindi!"
+  },
+  "footer": {
+    "desc": "Front-End Developer (React) · O'zbekiston",
+    "media": "Ijtimoiy tarmoqlar",
+    "copyright": "© 2026 Sudays Sadikov. Barcha huquqlar himoyalangan."
+  }
+}

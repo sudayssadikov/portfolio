@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "home",
+    "works": "projects",
+    "about": "about-me",
+    "skills": "skills",
+    "contacts": "contacts"
+  },
+  "hero": {
+    "title_start": "Sudays is a ",
+    "web_designer": "Front-End",
+    "and": " and ",
+    "frontend_dev": "React developer",
+    "subtitle": "Born in Uzbekistan. Front-end specialist crafting modern, fast, and responsive web applications with React.",
+    "cta": "Contact me !!"
+  },
+  "quote": {
+    "text": "Good code is its own best documentation, great code is an experience",
+    "author": "Front-End Philosophy"
+  },
+  "projects": {
+    "title": "projects",
+    "view_all": "View all ~~>",
+    "live_btn": "Live Demo <~>",
+    "github_btn": "GitHub <~>",
+    "items": {
+      "lab_verce": {
+        "title": "lab.verce",
+        "description": "High-performance React & TypeScript web platform with advanced state management and modular architecture."
+      },
+      "logistmobile": {
+        "title": "logistmobile",
+        "description": "Comprehensive logistics and fleet transport management mobile web application with real-time tracking."
+      },
+      "retseptuz": {
+        "title": "retseptuz",
+        "description": "Interactive culinary recipe discovery platform with ingredient filtering and responsive search."
+      },
+      "akademnashr": {
+        "title": "akademnashr",
+        "description": "Official platform for Akademnashr publishing house featuring book catalogs and responsive reader layout."
+      },
+      "books": {
+        "title": "books",
+        "description": "Modern book library and collection showcase with interactive bookshelves and category navigation."
+      }
+    }
+  },
+  "skills": {
+    "title": "skills",
+    "categories": {
+      "languages": "Languages",
+      "frameworks": "Front-end & React",
+      "styling": "Styling & UI",
+      "tools": "Development Tools",
+      "other": "Other Skills"
+    }
+  },
+  "about": {
+    "title": "about-me",
+    "greeting": "Hello, I'm Sudays!",
+    "p1": "I was born in Uzbekistan and I am a dedicated front-end developer specializing exclusively in React. I focus on creating responsive, intuitive, and high-performance web applications from scratch.",
+    "p2": "I write clean, modular, and maintainable code with JavaScript (ES6+), TypeScript, and React. Ensuring pixel-perfect responsive layouts and seamless user experience is my primary goal.",
+    "read_more": "Read more ->",
+    "read_less": "Show less <-",
+    "more_info": "In my projects, I focus on component reusability, modern state management (Zustand/Redux), and smooth REST API integration. Check out my GitHub repositories for my latest work."
+  },
+  "contacts": {
+    "title": "contacts",
+    "text": "I'm open to freelance opportunities, collaborative projects, and front-end developer roles. Feel free to connect via Telegram or Instagram.",
+    "box_title": "Message me here",
+    "telegram": "@sudays700",
+    "instagram": "@suudays7",
+    "github": "sudayssadikov",
+    "email": "sudayssadikov@gmail.com",
+    "form_name": "Name",
+    "form_name_placeholder": "Your Name",
+    "form_email": "Email",
+    "form_email_placeholder": "your@email.com",
+    "form_title": "Title",
+    "form_title_placeholder": "Project inquiry...",
+    "form_message": "Message",
+    "form_message_placeholder": "Write your transmission message...",
+    "send_btn": "Send message ->",
+    "success_msg": "Message transmitted successfully! I'll reply soon.",
+    "copied": "Copied to clipboard!"
+  },
+  "footer": {
+    "desc": "Front-End Developer (React) · Uzbekistan",
+    "media": "Media & Socials",
+    "copyright": "© 2026 Sudays Sadikov. All rights reserved."
+  }
+}

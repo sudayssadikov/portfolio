@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: #282C33;
+  color: #ABB2BF;
+  font-family: 'Fira Code', monospace;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1E2127;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3E4451;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C778DD;
+}
+
+/* Button & Card Micro-Interactions */
+.figma-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-family: 'Fira Code', monospace;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border: 1px solid #C778DD;
+  color: #FFFFFF;
+  background-color: transparent;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.figma-btn:hover {
+  background-color: rgba(199, 120, 221, 0.15);
+  box-shadow: 0 0 12px rgba(199, 120, 221, 0.3);
+  transform: translateY(-1px);
+}
+
+.figma-btn:active {
+  transform: translateY(0);
+}
+
+.figma-btn-muted {
+  border-color: #ABB2BF;
+  color: #ABB2BF;
+}
+
+.figma-btn-muted:hover {
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  background-color: rgba(171, 178, 191, 0.1);
+  box-shadow: none;
+}
+
+/* Geometric Dot Pattern */
+.dots-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 4px);
+  gap: 12px;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 9999px;
+  background-color: #ABB2BF;
+  opacity: 0.8;
+}
+
+.dot-primary {
+  background-color: #C778DD;
+}
+
+/* Geometric Outline Box */
+.wireframe-box {
+  border: 1px solid #C778DD;
+  background: transparent;
+}
+
+.wireframe-box-gray {
+  border: 1px solid #ABB2BF;
+  background: transparent;
+}
