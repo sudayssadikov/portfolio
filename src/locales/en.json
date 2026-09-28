@@ -4,7 +4,8 @@
     "works": "projects",
     "about": "about-me",
     "skills": "skills",
-    "contacts": "contacts"
+    "contacts": "contacts",
+    "cv": "cv"
   },
   "hero": {
     "title_start": "Sudays is a ",
@@ -12,7 +13,8 @@
     "and": " and ",
     "frontend_dev": "React developer",
     "subtitle": "Born in Uzbekistan. Front-end specialist crafting modern, fast, and responsive web applications with React.",
-    "cta": "Contact me !!"
+    "cta": "Contact me !!",
+    "cv_btn": "Resume (CV) ⤓"
   },
   "quote": {
     "text": "Good code is its own best documentation, great code is an experience",
@@ -28,21 +30,13 @@
         "title": "lab.verce",
         "description": "High-performance React & TypeScript web platform with advanced state management and modular architecture."
       },
-      "logistmobile": {
-        "title": "logistmobile",
-        "description": "Comprehensive logistics and fleet transport management mobile web application with real-time tracking."
-      },
       "retseptuz": {
         "title": "retseptuz",
         "description": "Interactive culinary recipe discovery platform with ingredient filtering and responsive search."
       },
-      "akademnashr": {
-        "title": "akademnashr",
-        "description": "Official platform for Akademnashr publishing house featuring book catalogs and responsive reader layout."
-      },
-      "books": {
-        "title": "books",
-        "description": "Modern book library and collection showcase with interactive bookshelves and category navigation."
+      "dentify_clinic": {
+        "title": "dentify clinic",
+        "description": "Modern dental clinic web application featuring appointment booking, doctor schedules, and responsive UI."
       }
     }
   },
@@ -63,7 +57,24 @@
     "p2": "I write clean, modular, and maintainable code with JavaScript (ES6+), TypeScript, and React. Ensuring pixel-perfect responsive layouts and seamless user experience is my primary goal.",
     "read_more": "Read more ->",
     "read_less": "Show less <-",
+    "cv_btn": "View / Download CV ⤓",
     "more_info": "In my projects, I focus on component reusability, modern state management (Zustand/Redux), and smooth REST API integration. Check out my GitHub repositories for my latest work."
+  },
+  "cv": {
+    "title": "Curriculum Vitae (CV)",
+    "print_btn": "Print / PDF",
+    "download_btn": "Open in New Tab",
+    "copy_btn": "Copy Text",
+    "copied": "Copied!",
+    "close": "Close",
+    "role": "Front-End Developer (React.js)",
+    "location": "Tashkent, Uzbekistan",
+    "summary_title": "Professional Summary",
+    "summary": "Dedicated Front-End Developer based in Uzbekistan specializing exclusively in the React ecosystem. Experienced in building responsive, high-performance, and pixel-perfect web applications with clean code architecture, modular design, and seamless REST API integration.",
+    "skills_title": "Core Technologies",
+    "projects_title": "Key Projects",
+    "languages_title": "Languages",
+    "languages_val": "Uzbek (Native), English (Technical / Working proficiency)"
   },
   "contacts": {
     "title": "contacts",

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudays Sadikov — Front-End React Developer CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #282C33;
+      --card-bg: #1E2227;
+      --text: #ABB2BF;
+      --text-white: #FFFFFF;
+      --primary: #C778DD;
+      --border: #3E4451;
+      --accent-green: #98C379;
+      --accent-blue: #61AFEF;
+      --accent-yellow: #E5C07B;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 30px 20px;
+    }
+
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      padding: 40px;
+      border-radius: 4px;
+      position: relative;
+    }
+
+    .top-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      font-family: 'Fira Code', monospace;
+      font-size: 13px;
+      cursor: pointer;
+      text-decoration: none;
+      border: 1px solid var(--primary);
+      background: transparent;
+      color: var(--text-white);
+      transition: all 0.2s ease;
+    }
+
+    .btn:hover {
+      background: rgba(199, 120, 221, 0.15);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #282C33;
+      font-weight: 600;
+    }
+
+    .btn-primary:hover {
+      background: #d88fed;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 24px;
+    }
+
+    .name {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--text-white);
+      font-family: 'Fira Code', monospace;
+      margin-bottom: 4px;
+    }
+
+    .role {
+      font-size: 18px;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 12px;
+      font-family: 'Fira Code', monospace;
+    }
+
+    .contacts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 8px 16px;
+      font-size: 13px;
+      font-family: 'Fira Code', monospace;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .contact-item a {
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .contact-item a:hover {
+      color: var(--text-white);
+      text-decoration: underline;
+    }
+
+    .contact-label {
+      color: var(--primary);
+    }
+
+    section {
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      font-family: 'Fira Code', monospace;
+      font-size: 16px;
+      color: var(--text-white);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title span.hash {
+      color: var(--primary);
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .summary-text {
+      font-size: 14px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .skill-card {
+      border: 1px solid var(--border);
+      padding: 12px 16px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .skill-cat {
+      font-family: 'Fira Code', monospace;
+      font-size: 12px;
+      color: var(--primary);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .skill-items {
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .project-card {
+      border: 1px solid var(--border);
+      padding: 16px;
+      margin-bottom: 14px;
+      background: rgba(255, 255, 255, 0.015);
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    .project-name {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-white);
+      font-family: 'Fira Code', monospace;
+    }
+
+    .project-links a {
+      font-size: 12px;
+      font-family: 'Fira Code', monospace;
+      color: var(--accent-blue);
+      text-decoration: none;
+      margin-left: 12px;
+    }
+
+    .project-links a:hover {
+      text-decoration: underline;
+    }
+
+    .project-tags {
+      font-size: 12px;
+      color: var(--accent-yellow);
+      font-family: 'Fira Code', monospace;
+      margin-bottom: 8px;
+    }
+
+    .project-desc {
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* Print styles */
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #1a1a1a !important;
+        padding: 0 !important;
+      }
+
+      .container {
+        border: none !important;
+        background: #ffffff !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+      }
+
+      .top-actions {
+        display: none !important;
+      }
+
+      .name, .section-title, .project-name {
+        color: #111111 !important;
+      }
+
+      .role, .section-title span.hash, .contact-label, .skill-cat {
+        color: #7b2cbf !important;
+      }
+
+      .section-title::after {
+        background: #cccccc !important;
+      }
+
+      .skill-card, .project-card {
+        border-color: #e0e0e0 !important;
+        background: #fafafa !important;
+      }
+
+      .project-tags {
+        color: #b5651d !important;
+      }
+
+      .project-links a {
+        color: #0066cc !important;
+      }
+
+      .summary-text, .skill-items, .project-desc, .contacts-grid {
+        color: #333333 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-actions">
+      <button class="btn btn-primary" onclick="window.print()">
+        🖨️ Chop etish / PDF saqlash
+      </button>
+      <a href="/" class="btn">
+        ← Portfolio'ga qaytish
+      </a>
+    </div>
+
+    <header>
+      <h1 class="name">Sudays Sadikov</h1>
+      <div class="role">Front-End Developer (React.js)</div>
+      
+      <div class="contacts-grid">
+        <div class="contact-item">
+          <span class="contact-label">Loc:</span> Uzbekistan 🇺🇿
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">GitHub:</span>
+          <a href="https://github.com/sudayssadikov" target="_blank">github.com/sudayssadikov</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Telegram:</span>
+          <a href="https://t.me/sudays700" target="_blank">@sudays700</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Instagram:</span>
+          <a href="https://instagram.com/suudays7" target="_blank">@suudays7</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Email:</span>
+          <a href="mailto:sudayssadikov@gmail.com">sudayssadikov@gmail.com</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2 class="section-title"><span class="hash">#</span> Professional Summary</h2>
+      <p class="summary-text">
+        O'zbekistonda faoliyat yurituvchi, to'liq Front-End (React.js) yo'nalishiga ixtisoslashgan dasturchi. Zamonaviy, yuqori tezlikda ishlovchi, toza arxitekturali va moslashuvchan (mobile-first) veb-ilovalarni yaratishga sodiq. Komponentlarni qayta ishlatish, qulay UI/UX hamda REST API integratsiyasi bo'yicha kuchli amaliy tajribaga ega.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span class="hash">#</span> Core Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-cat">Languages</div>
+          <div class="skill-items">JavaScript (ES6+), TypeScript, HTML5, Semantic CSS3</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-cat">Frameworks & Libraries</div>
+          <div class="skill-items">React.js, React Router, Vite, Zustand / Redux, Next.js Basics</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-cat">Styling & UI</div>
+          <div class="skill-items">Tailwind CSS, SCSS / SASS, CSS Modules, Framer Motion</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-cat">Tools & Workflow</div>
+          <div class="skill-items">Git, GitHub, VS Code, Figma, npm / yarn, Vercel, REST API</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span class="hash">#</span> Featured Projects</h2>
+      
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-name">1. lab.verce</div>
+          <div class="project-links">
+            <a href="https://lab-verce.vercel.app" target="_blank">Live Demo ↗</a>
+            <a href="https://github.com/sudayssadikov/lab.verce" target="_blank">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-tags">React · TypeScript · Tailwind CSS · Vite</div>
+        <p class="project-desc">
+          Ilg'or, tezkor va modulli arxitekturaga ega zamonaviy veb-platforma. Dinamik komponentlar, turli holatlar boshqaruvi va yuqori unumdorlik bilan yaratilgan.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-name">2. retseptuz</div>
+          <div class="project-links">
+            <a href="https://retseptuz.vercel.app" target="_blank">Live Demo ↗</a>
+            <a href="https://github.com/sudayssadikov/retseptuz" target="_blank">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-tags">React · JavaScript · Tailwind · Interactive UI</div>
+        <p class="project-desc">
+          Milliy va jahon taomlari retseptlari, toifalar bo'yicha saralash va tezkor qidiruv tizimiga ega interaktiv oshpazlik portali.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-name">3. dentify clinic</div>
+          <div class="project-links">
+            <a href="https://dentify-clinic.vercel.app" target="_blank">Live Demo ↗</a>
+            <a href="https://github.com/sudayssadikov/dentify-clinic" target="_blank">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-tags">React · Tailwind CSS · Vite · Responsive UI</div>
+        <p class="project-desc">
+          Stomatologiya va tibbiy klinika xizmatlari, shifokorlar ish jadvali hamda onlayn qabulga yozilish imkoniyatini taqdim etuvchi zamonaviy klinika veb-ilovasi.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span class="hash">#</span> Languages</h2>
+      <p class="summary-text" style="font-family: 'Fira Code', monospace; font-size: 13px;">
+        • <strong>O'zbek tili:</strong> Ona tili (Native)<br>
+        • <strong>Ingliz tili:</strong> Texnik daraja (Technical / Documentation & Working proficiency)
+      </p>
+    </section>
+  </div>
+</body>
+</html>

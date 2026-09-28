@@ -5,7 +5,7 @@ import Logo from './Logo';
 import LanguageSwitcher from './LanguageSwitcher';
 import { socialLinks } from '../data/portfolioData';
 
-export default function Navbar() {
+export default function Navbar({ onOpenCv }) {
   const { t } = useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -63,6 +63,15 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
+            <li>
+              <button
+                type="button"
+                onClick={onOpenCv}
+                className="text-xs font-mono font-medium px-2.5 py-1 border border-primary/60 text-primary hover:text-white hover:bg-primary/20 transition-all cursor-pointer rounded-sm"
+              >
+                #cv
+              </button>
+            </li>
           </ul>
 
           {/* Language Switcher */}
@@ -73,6 +82,13 @@ export default function Navbar() {
 
         {/* Mobile Action Group */}
         <div className="flex items-center gap-3 md:hidden">
+          <button
+            type="button"
+            onClick={onOpenCv}
+            className="text-xs font-mono font-medium px-2 py-0.5 border border-primary/60 text-primary hover:text-white hover:bg-primary/20 transition-colors"
+          >
+            CV
+          </button>
           <LanguageSwitcher />
           <button
             type="button"
@@ -105,6 +121,19 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
+            <li>
+              <button
+                type="button"
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  onOpenCv();
+                }}
+                className="block text-left py-1 text-primary hover:text-white transition-colors text-2xl font-medium"
+              >
+                <span className="text-primary mr-1">#</span>
+                <span>{t('nav.cv')} ⤓</span>
+              </button>
+            </li>
           </ul>
 
           {/* Mobile Socials bottom */}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { FolderGit2, ExternalLink, Github } from 'lucide-react';
+import { FolderGit2, ExternalLink } from 'lucide-react';
+import { GitHubIcon } from './Icons';
 import Button from './Button';
 
 export default function ProjectCard({ project, className = "" }) {
@@ -20,7 +21,7 @@ export default function ProjectCard({ project, className = "" }) {
             <span className="w-2.5 h-2.5 rounded-full bg-accent-red/80" />
             <span className="w-2.5 h-2.5 rounded-full bg-accent-yellow/80" />
             <span className="w-2.5 h-2.5 rounded-full bg-accent-green/80" />
-            <span className="text-[11px] font-mono text-muted/70 ml-2">git/sudayssadikov/{project.title}</span>
+            <span className="text-[11px] font-mono text-muted/70 ml-2">git/sudayssadikov/{project.title.replace(/\s+/g, '-')}</span>
           </div>
           <FolderGit2 className="w-4 h-4 text-primary/70 group-hover:text-primary transition-colors" />
         </div>
@@ -53,12 +54,12 @@ export default function ProjectCard({ project, className = "" }) {
             rel="noopener noreferrer"
             className="text-xs sm:text-sm py-1.5 px-3 flex items-center gap-1.5"
           >
-            <Github className="w-3.5 h-3.5" />
+            <GitHubIcon className="w-4 h-4" />
             <span>{t('projects.github_btn')}</span>
           </Button>
         )}
 
-        {project.liveUrl && project.liveUrl !== project.githubUrl && (
+        {project.liveUrl && (
           <Button 
             href={project.liveUrl} 
             variant="muted" 

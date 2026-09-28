@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
+import { FileText } from 'lucide-react';
 import SectionTitle from '../components/SectionTitle';
 import Button from '../components/Button';
 import DotMatrix from '../components/DotMatrix';
-import developerAvatar from '../assets/developer_avatar.jpg';
 
-export default function About() {
+export default function About({ onOpenCv }) {
   const { t } = useTranslation();
   const [expanded, setExpanded] = useState(false);
 
@@ -52,19 +52,30 @@ export default function About() {
               )}
             </AnimatePresence>
 
-            <Button 
-              variant="primary"
-              onClick={() => setExpanded(!expanded)}
-              className="text-sm px-5 py-2.5"
-            >
-              {expanded ? t('about.read_less') : t('about.read_more')}
-            </Button>
+            <div className="flex flex-wrap items-center gap-3">
+              <Button 
+                variant="primary"
+                onClick={() => setExpanded(!expanded)}
+                className="text-sm px-5 py-2.5"
+              >
+                {expanded ? t('about.read_less') : t('about.read_more')}
+              </Button>
+
+              <button
+                type="button"
+                onClick={onOpenCv}
+                className="inline-flex items-center gap-2 px-4 py-2 border border-borderMuted hover:border-primary bg-white/[0.02] hover:bg-primary/10 text-white font-mono text-sm transition-all duration-200 group cursor-pointer"
+              >
+                <FileText className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
+                <span>{t('about.cv_btn')}</span>
+              </button>
+            </div>
           </div>
 
-          {/* Right Column: Visual Portrait with overlapping geometric frame */}
-          <div className="lg:col-span-5 relative flex justify-center select-none">
+          {/* Right Column: Visual Specs Box with overlapping geometric frame (No photo) */}
+          <div className="lg:col-span-5 relative flex justify-center select-none font-mono">
             {/* Dot grid decoration top-left */}
-            <div className="absolute top-4 left-4 sm:left-10 z-0">
+            <div className="absolute -top-4 left-4 sm:left-10 z-0">
               <DotMatrix rows={5} cols={5} gap={10} color="#ABB2BF" />
             </div>
 
@@ -76,16 +87,42 @@ export default function About() {
             {/* Wireframe border frame behind */}
             <div className="absolute -bottom-6 -left-2 sm:left-4 w-40 h-40 border border-primary/60 z-0" />
 
-            {/* Portrait Image Box */}
-            <div className="relative z-10 w-full max-w-[320px] border border-borderMuted bg-surfaceDark overflow-hidden shadow-xl">
-              <img 
-                src={developerAvatar} 
-                alt="Developer Portrait" 
-                className="w-full h-[360px] object-cover object-top transition-transform duration-500 hover:scale-105"
-                loading="lazy"
-              />
-              <div className="border-t border-primary/40 p-2.5 text-center bg-[#282C33]/90">
-                <span className="text-xs text-muted font-mono">Tashkent, Uzbekistan 🇺🇿</span>
+            {/* Developer Spec / Highlights Box */}
+            <div className="relative z-10 w-full max-w-[340px] border border-borderMuted bg-surfaceDark p-6 shadow-2xl transition-all duration-300 hover:border-primary">
+              <div className="border-b border-borderMuted pb-3 mb-4 flex items-center justify-between">
+                <span className="text-xs uppercase tracking-wider text-primary font-bold"># developer-profile</span>
+                <span className="text-[11px] text-muted">React.js</span>
+              </div>
+
+              <div className="space-y-3 text-xs sm:text-sm">
+                <div className="flex items-center justify-between p-2.5 border border-white/5 bg-white/[0.02]">
+                  <span className="text-muted">Origin</span>
+                  <span className="text-white font-medium">Uzbekistan 🇺🇿</span>
+                </div>
+
+                <div className="flex items-center justify-between p-2.5 border border-white/5 bg-white/[0.02]">
+                  <span className="text-muted">Focus</span>
+                  <span className="text-primary font-semibold">Front-End (React)</span>
+                </div>
+
+                <div className="flex items-center justify-between p-2.5 border border-white/5 bg-white/[0.02]">
+                  <span className="text-muted">Core Stack</span>
+                  <span className="text-white font-semibold">React, TS, Tailwind</span>
+                </div>
+
+                <div className="flex items-center justify-between p-2.5 border border-white/5 bg-white/[0.02]">
+                  <span className="text-muted">GitHub</span>
+                  <span className="text-accent-green font-semibold">@sudayssadikov</span>
+                </div>
+
+                <div className="flex items-center justify-between p-2.5 border border-white/5 bg-white/[0.02]">
+                  <span className="text-muted">Status</span>
+                  <span className="text-accent-yellow font-medium">Open to projects</span>
+                </div>
+              </div>
+
+              <div className="mt-5 pt-3 border-t border-borderMuted/40 text-center">
+                <span className="text-xs text-muted">Crafting fast, clean web experiences</span>
               </div>
             </div>
 

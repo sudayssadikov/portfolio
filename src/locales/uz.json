@@ -4,7 +4,8 @@
     "works": "loyihalar",
     "about": "men-haqimda",
     "skills": "ko'nikmalar",
-    "contacts": "aloqa"
+    "contacts": "aloqa",
+    "cv": "cv"
   },
   "hero": {
     "title_start": "Sudays — ",
@@ -12,7 +13,8 @@
     "and": " va ",
     "frontend_dev": "React dasturchi",
     "subtitle": "O'zbekistonda tug'ilgan front-end dasturchi. Zamonaviy, tezkor va qulay veb-ilovalarni React yordamida yaratadi.",
-    "cta": "Bog'lanish !!"
+    "cta": "Bog'lanish !!",
+    "cv_btn": "Rezyume (CV) ⤓"
   },
   "quote": {
     "text": "Yaxshi kod o'z-o'zini tushuntiradi, ajoyib kod esa o'zini his qildiradi",
@@ -28,21 +30,13 @@
         "title": "lab.verce",
         "description": "React va TypeScript asosidagi ilg'or, tezkor va modulli arxitekturaga ega zamonaviy veb-platforma."
       },
-      "logistmobile": {
-        "title": "logistmobile",
-        "description": "Logistika va yuk tashish jarayonlarini real vaqtda kuzatish hamda boshqarish uchun moslashuvchan mobil veb-ilova."
-      },
       "retseptuz": {
         "title": "retseptuz",
         "description": "Milliy va jahon taomlari retseptlari, toifalar filtri va aqlli qidiruv tizimiga ega interaktiv oshpazlik portali."
       },
-      "akademnashr": {
-        "title": "akademnashr",
-        "description": "Akademnashr nashriyoti uchun kitoblar katalogi, mualliflar taqdimoti va qulay o'qish interfeysiga ega rasmiy sayt."
-      },
-      "books": {
-        "title": "books",
-        "description": "Onlayn kitoblar kutubxonasi, kitob javonlari va o'quvchilar uchun qulay navigatsiyaga ega platforma."
+      "dentify_clinic": {
+        "title": "dentify clinic",
+        "description": "Stomatologiya va tibbiy klinika xizmatlari, shifokorlar qabuli hamda onlayn bron qilish imkoniyatiga ega zamonaviy klinika veb-ilovasi."
       }
     }
   },
@@ -63,7 +57,24 @@
     "p2": "Har bir loyihada toza arxitektura, qulay UI/UX, mobil moslashuvchanlik va yuqori unumdorlikka qat'iy amal qilaman. JavaScript, TypeScript va React'da sifatli kod yozish mening asosiy ixtisosligimdir.",
     "read_more": "Batafsil ma'lumot ->",
     "read_less": "Qisqartirish <-",
+    "cv_btn": "CV ko'rish / yuklab olish ⤓",
     "more_info": "Loyihalarimda komponentlarni qayta ishlatiluvchan qilish, zamonaviy state management (Zustand/Redux) va REST API bilan uzviy integratsiyani ta'minlayman. GitHub'da doimiy yangi tajribalar ustida ishlayman."
+  },
+  "cv": {
+    "title": "Rezyume (CV)",
+    "print_btn": "Chop etish / PDF",
+    "download_btn": "Yangi oynada ochish",
+    "copy_btn": "Matnni nusxalash",
+    "copied": "Nusxa olindi!",
+    "close": "Yopish",
+    "role": "Front-End dasturchi (React.js)",
+    "location": "Toshkent, O'zbekiston",
+    "summary_title": "Professional xulosa",
+    "summary": "O'zbekistonda faoliyat yurituvchi, to'liq Front-End (React.js) yo'nalishiga ixtisoslashgan dasturchi. Zamonaviy, yuqori tezlikda ishlovchi, toza arxitekturaga ega va moslashuvchan veb-ilovalarni yaratishga sodiq. Komponentlarni qayta ishlatish, qulay UI/UX hamda REST API integratsiyasi bo'yicha kuchli amaliy tajribaga ega.",
+    "skills_title": "Asosiy texnologiyalar",
+    "projects_title": "Asosiy loyihalar",
+    "languages_title": "Tillar",
+    "languages_val": "O'zbek tili (Ona tili), Ingliz tili (Texnik / B1+)"
   },
   "contacts": {
     "title": "aloqa",
